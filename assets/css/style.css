@@ -1,0 +1,394 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    line-height: 1.8;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+
+/* nav */
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    z-index: 9999;
+}
+
+.navbar .navbar-nav .nav-link {
+    text-transform: uppercase;
+    font-size: 0.875em;
+
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2em;
+
+    text-shadow: #202631 1px 0px 10px;
+
+}
+
+.navbar span {
+    font-size: 1.5em;
+    background-color: #000;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.75em;
+    text-transform: uppercase;
+    padding-left: 20px;
+    text-shadow: #202631 1px 0px 10px;
+    
+
+}
+.navbar .navbar-nav .nav-link:hover {
+    background-color: #000;
+    color: white
+}
+
+.social-links a {
+    width: 2.25em;
+    height: 2.25em;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    font-size: 1.125em;
+    margin-left: 5px;
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        background-color: black;
+    }
+    .navbar-brand{
+        padding-left: 0;
+    }
+    .social-links {
+        display: none;
+    }
+    #sec-3{
+        display: none;
+    }
+}
+
+a {
+    color: #545d6d;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #202631;
+}
+
+
+
+.about{
+    background-image: url("/assets/img/gamer.jpeg");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.full {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mid {
+    height: 400px;
+}
+
+#sec-1 {
+    background-image: url("/assets/img/cris2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#sec-1 h1 {
+    color: white;
+    font-weight: 900;
+    background-color: black;
+    width: 70%;
+    padding-left: 40px;
+
+}
+
+#sec-1 span {
+    background-color: #fff2a8;
+    padding: 0.3em;
+}
+
+@media only screen and (max-width: 767px) {
+    #sec-1 {
+        background-image: url("/assets/img/code.jpeg");
+        /* filter: grayscale(100%);   */
+       
+        background-color: #2f3339;
+    }
+    #sec-1 span {
+        background-color: #0dff8e;
+        padding: 0.3em;
+    }
+}
+
+.btn {
+    padding: 1.25em 2.75em;
+    border-color: black;
+    border-width: 2px;
+    font-size: 0.875em;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #000;
+    color: white;
+}
+
+/* scroll-1 */
+.scroll-down {
+    height: 50px;
+    width: 30px;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid #fff;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::before {
+    top: 30%;
+    animation-delay: 0.3s;
+    
+}
+
+@keyframes scroll-down {
+    0% {
+        /* top:20%; */
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
+/* scroll2 */
+.scroll-down2 {
+    height: 50px;
+    width: 30px;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-down2::before,
+.scroll-down2::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid #fff;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down2::before {
+    top: 30%;
+    animation-delay: 0.3s;
+   
+}
+
+@keyframes scroll-down2 {
+    0% {
+        /* top:20%; */
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
+/* scroll-3 */
+.scroll-down3 {
+    height: 50px;
+    width: 30px;
+    border: 2px solid #000;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-down3::before,
+.scroll-down3::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid #000;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down3::before {
+    top: 30%;
+    animation-delay: 0.3s;
+  
+}
+
+@keyframes scroll-down3 {
+    0% {
+        /* top:20%; */
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
+#sec-2 {
+    background-color: #fff2a8;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    color: #000;
+    text-align: justify;
+}
+
+.sec-img img {
+    height: 100%;
+    border: #000 solid 1px;
+}
+
+#sec-3 {
+    background-color: #F6F7F2;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+#sec-3 .btn {
+    width: 100%;
+}
+
+#sec-3 img {
+    filter: grayscale(100%);
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+}
+
+#sec-3 img:hover{
+    filter: grayscale(0%);
+    filter: grayscale(0%);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+.card-body {
+    background-color: #F6F7F2;
+
+}
+
+.sec-32{
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+
+#sec-4 {
+    background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+#contact .btn {
+    width: 100%;
+}
